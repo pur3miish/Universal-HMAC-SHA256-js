@@ -1,0 +1,68 @@
+{
+  "name": "universal-hmac-sha256-js",
+  "version": "1.0.0-rc",
+  "description": "A universal JavaScript HMAC-SHA256 hashing algorithm (browsers + Node.js).",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pur3miish/Universal-HMAC-SHA256-js.git"
+  },
+  "keywords": [
+    "blockchain",
+    "hash",
+    "sha256",
+    "hmac",
+    "cryptography",
+    "mac",
+    "javascript",
+    "universal",
+    "isomorphic",
+    "browser",
+    "based",
+    "node"
+  ],
+  "author": "pur3miish",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pur3miish/Universal-HMAC-SHA256-js/issues"
+  },
+  "homepage": "https://github.com/pur3miish/Universal-HMAC-SHA256-js#readme",
+  "scripts": {
+    "prepare": "npm run prepare:jsdoc && npm run prepare:prettier",
+    "prepare:jsdoc": "jsdoc-md",
+    "prepare:prettier": "prettier --write readme.md",
+    "test": "npm run test:eslint && npm run test:prettier && npm run test:api",
+    "test:api": "coverage-node test/index.test.mjs",
+    "test:eslint": "eslint .",
+    "test:prettier": "prettier -c .",
+    "prepublishOnly": "npm test"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ],
+  "sideEffects": false,
+  "files": [
+    "index.js"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./index.js"
+  },
+  "devDependencies": {
+    "coverage-node": "^8.0.0",
+    "eslint": "^8.25.0",
+    "eslint-config-env": "^23.0.2",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-compat": "^4.0.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsdoc": "^37.9.7",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jsdoc-md": "^11.0.2",
+    "prettier": "^2.7.1",
+    "test-director": "^10.0.0"
+  }
+}
