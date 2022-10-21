@@ -1,8 +1,9 @@
 # Universal-HMAC-SHA256-js
 
-A universal JavaScript (Browsers + Node.js) HMAC-SHA256 hashing algorithm.
+An optimised universal JavaScript (Browsers + Node.js) HMAC-SHA256 hashing algorithm.
 
 - Zero dependencies
+- 🤏 Small bundle impact (~400 bytes)
 
 # Setup
 
