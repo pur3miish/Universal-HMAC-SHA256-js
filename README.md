@@ -3,7 +3,7 @@
 An optimised universal JavaScript (Browsers + Node.js) HMAC-SHA256 hashing algorithm.
 
 - Zero dependencies
-- 🤏 Small bundle impact (~400 bytes)
+- 🤏 Small bundle impact (\~400 bytes)
 
 # Setup
 
