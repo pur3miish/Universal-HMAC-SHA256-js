@@ -26,8 +26,7 @@ import hmac_sha256 from 'universal-hmac-sha256/hmac-sha256.mjs'
 In Deno
 
 ```js
-import hmac_sha256 from ''
-import ripemd160 from 'https://deno.land/x/hmacsha256/hmac-sha256.mjs'
+import hmac_sha256 from 'https://deno.land/x/hmacsha256/hmac-sha256.mjs'
 ```
 
 # API
