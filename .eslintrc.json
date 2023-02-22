@@ -1,3 +1,26 @@
 {
-  "extends": ["env"]
+  "extends": ["eslint:recommended"],
+  "env": {
+    "es2022": true,
+    "node": true,
+    "browser": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "overrides": [
+    {
+      "files": ["*.mjs"],
+      "parserOptions": {
+        "sourceType": "module"
+      },
+      "globals": {
+        "__dirname": "off",
+        "__filename": "off",
+        "exports": "off",
+        "module": "off",
+        "require": "off"
+      }
+    }
+  ]
 }

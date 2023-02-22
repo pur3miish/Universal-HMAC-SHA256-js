@@ -1,6 +1,6 @@
 import { deepStrictEqual, rejects } from 'assert'
 import crypto from 'crypto'
-import hmac_sha256 from '../index.js'
+import hmac_sha256 from '../hmac-sha256.mjs'
 
 const data = Uint8Array.from([
   35, 188, 152, 123, 132, 8, 158, 106, 117, 71, 177, 162, 127, 188, 100, 13, 54,

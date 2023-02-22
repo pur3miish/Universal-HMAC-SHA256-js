@@ -14,13 +14,20 @@ npm i universal-hmac-sha256
 Ways to require.
 
 ```js
-const hmac_sha256 = require('universal-hmac-sha256')
+const hmac_sha256 = import('universal-hmac-sha256/hmac-sha256.mjs')
 ```
 
 Ways to import.
 
 ```js
-import hmac_sha256 from 'universal-hmac-sha256'
+import hmac_sha256 from 'universal-hmac-sha256/hmac-sha256.mjs'
+```
+
+In Deno
+
+```js
+import hmac_sha256 from ''
+import ripemd160 from 'https://deno.land/x/hmacsha256/hmac-sha256.mjs'
 ```
 
 # API

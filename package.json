@@ -1,6 +1,6 @@
 {
   "name": "universal-hmac-sha256-js",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A universal JavaScript HMAC-SHA256 hashing algorithm (browsers + Node.js).",
   "repository": {
     "type": "git",
@@ -22,18 +22,15 @@
   ],
   "author": "pur3miish",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/pur3miish/Universal-HMAC-SHA256-js/issues"
-  },
+  "bugs": "https://github.com/pur3miish/Universal-HMAC-SHA256-js/issues",
   "homepage": "https://github.com/pur3miish/Universal-HMAC-SHA256-js#readme",
   "scripts": {
-    "prepare": "npm run prepare:jsdoc && npm run prepare:prettier",
-    "prepare:jsdoc": "jsdoc-md",
-    "prepare:prettier": "prettier --write readme.md",
-    "test": "npm run test:eslint && npm run test:prettier && npm run test:api",
-    "test:api": "coverage-node test/index.test.mjs",
-    "test:eslint": "eslint .",
-    "test:prettier": "prettier -c .",
+    "eslint": "eslint .",
+    "prettier": "prettier -c .",
+    "prettier:readme": "prettier --write readme.md",
+    "types": "tsc -p jsconfig.json",
+    "tests": "coverage-node test/index.test.mjs",
+    "test": "npm run eslint && npm run prettier && npm run types && npm run tests",
     "prepublishOnly": "npm test"
   },
   "engines": {
@@ -45,24 +42,19 @@
   ],
   "sideEffects": false,
   "files": [
-    "index.js"
+    "hmac-sha256.mjs"
   ],
   "exports": {
     "./package.json": "./package.json",
-    ".": "./index.js"
+    "./hmac-sha256.mjs": "./hmac-sha256.mjs"
   },
   "devDependencies": {
+    "@types/node": "^18.13.0",
     "coverage-node": "^8.0.0",
-    "eslint": "^8.25.0",
-    "eslint-config-env": "^23.0.2",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-compat": "^4.0.2",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsdoc": "^37.9.7",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "jsdoc-md": "^11.0.2",
-    "prettier": "^2.7.1",
-    "test-director": "^10.0.0"
+    "eslint": "^8.34.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^2.8.4",
+    "test-director": "^10.0.0",
+    "typescript": "^4.9.5"
   }
 }

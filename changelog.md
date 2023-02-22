@@ -1,5 +1,12 @@
 # UNIVERSAL-HMAC-SHA256-JS
 
+## V 2.0.0
+
+### Major
+
+- Changed from CJS to ESM
+- Imports now require deep imports
+
 ## V 1.0.0
 
 - Initial release
