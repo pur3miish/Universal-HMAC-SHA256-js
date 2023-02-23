@@ -8,19 +8,19 @@ An optimised universal JavaScript (Browsers + Node.js) HMAC-SHA256 hashing algor
 # Setup
 
 ```shell
-npm i universal-hmac-sha256
+npm i universal-hmac-sha256-js
 ```
 
 Node CJS.
 
 ```js
-const hmac_sha256 = import('universal-hmac-sha256/hmac-sha256-node.mjs')
+const hmac_sha256 = import('universal-hmac-sha256-js/hmac-sha256-node.mjs')
 ```
 
 Node ESM.
 
 ```js
-import hmac_sha256 from 'universal-hmac-sha256/hmac-sha256-node.mjs'
+import hmac_sha256 from 'universal-hmac-sha256-js/hmac-sha256-node.mjs'
 ```
 
 Deno.
