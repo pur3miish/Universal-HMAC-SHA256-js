@@ -1,5 +1,11 @@
 # UNIVERSAL-HMAC-SHA256-JS
 
+## V 3.0.1
+
+### Patch
+
+- Readme typo fixes.
+
 ## V 3.0.0
 
 ## Major
