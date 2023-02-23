@@ -19,7 +19,7 @@ async function hmac_sha256(data, key) {
     throw new TypeError('Expected Uint8Array input data.')
 
   if (typeof window == 'undefined') {
-    const { createHmac } = await import('crypto')
+    const { createHmac } = await import('node:crypto')
     return Uint8Array.from([...createHmac('SHA256', key).update(data).digest()])
   } else
     return window.crypto.subtle
