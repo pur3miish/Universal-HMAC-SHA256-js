@@ -1,6 +1,6 @@
 {
   "name": "universal-hmac-sha256-js",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "A universal JavaScript HMAC-SHA256 hashing algorithm (browsers + Node.js).",
   "repository": {
     "type": "git",
@@ -42,11 +42,13 @@
   ],
   "sideEffects": false,
   "files": [
-    "hmac-sha256.mjs"
+    "hmac-sha256-deno.mjs",
+    "hmac-sha256-node.mjs"
   ],
   "exports": {
     "./package.json": "./package.json",
-    "./hmac-sha256.mjs": "./hmac-sha256.mjs"
+    "./hmac-sha256-node.mjs": "./hmac-sha256-node.mjs",
+    "./hmac-sha256-deno.mjs": "./hmac-sha256-deno.mjs"
   },
   "devDependencies": {
     "@types/node": "^18.13.0",
