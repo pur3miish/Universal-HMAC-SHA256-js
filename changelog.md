@@ -1,5 +1,9 @@
 # UNIVERSAL-HMAC-SHA256-JS
 
+## V 3.0.2
+
+- node:crypto changed to node
+
 ## V 3.0.1
 
 ### Patch

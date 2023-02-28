@@ -1,6 +1,6 @@
 {
   "name": "universal-hmac-sha256-js",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "A universal JavaScript HMAC-SHA256 hashing algorithm (browsers + Node.js).",
   "repository": {
     "type": "git",
